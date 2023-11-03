@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import LoginPage from "./pages/Login/Login";
 import LoginPage from "./pages/Login/LoginPage";
 import PointHistoryPage from "./pages/PointHistory/PointHistoryPage";
+import CouponHistoryPage from "./pages/PointHistory/CouponHistory";
 import PaymentHistoryPage from "./pages/PaymentHistory/PaymentHistoryPage";
 import Header from "./components/header/header";
 
@@ -17,6 +18,11 @@ function Router() {
           exact
           path="/pointHistory"
           element={<PointHistoryPage />}
+        ></Route>
+        <Route
+          exact
+          path="/couponHistory"
+          element={<CouponHistoryPage />}
         ></Route>
         <Route
           exact

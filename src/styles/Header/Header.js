@@ -3,7 +3,7 @@
 import styled from "styled-components";
 
 export const HeaderLayout = styled.div`
-  width: 90rem;
+  width: 100%;
   height: 4rem;
   background-color: #fff;
   display: flex;
