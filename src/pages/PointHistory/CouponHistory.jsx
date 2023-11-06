@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 // import "../../styles/PointHistory/PointHistory.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Div, Table, Td, Container,Tr } from "../../styles/Point/CouponHistory.style";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -14,8 +14,28 @@ const dummyData = [
      point: "10",
      time: "11/15 12:30:15",
      total: "75,000"
-  }
+  },
+  {
+     id: 2,
+     name: "주호문",
+     username: "joshmoon77",
+     store: "starbucks",
+     point: "100",
+     time: "11/15 12:30:15",
+     total: "73,500"
+  },
+  {
+     id: 3,
+     name: "호주문",
+     username: "joshmoon777",
+     store: "starbucks",
+     point: "10",
+     time: "11/15 12:30:15",
+     total: "64,000"
+  },
 ];
+
+
 function CouponHistoryPage(data) {
   const navigate = useNavigate();
   // 더미데이터
@@ -67,33 +87,6 @@ function CouponHistoryPage(data) {
               <Td>{item.total}</Td>
             </Tr>
           ))}
-              <Tr>
-                <Td>1</Td>
-                <Td>문주호</Td>
-                <Td>joshmoon</Td>
-                <Td>starbucks</Td>
-                <Td>10</Td>
-                <Td>11/15 12:30:15</Td>
-                <Td>75000</Td>
-              </Tr>
-              <Tr>
-                <Td>2</Td>
-                <Td>주호문</Td>
-                <Td>joshmoon77</Td>
-                <Td>starbucks</Td>
-                <Td>100</Td>
-                <Td>11/15 12:30:15</Td>
-                <Td>735000</Td>
-              </Tr>
-              <Tr>
-                <Td>3</Td>
-                <Td>호주문</Td>
-                <Td>joshmoon777</Td>
-                <Td>starbucks</Td>
-                <Td>10</Td>
-                <Td>11/15 12:30:15</Td>
-                <Td>64000</Td>
-              </Tr>
             </tbody>
           </Table>
 
@@ -105,8 +98,6 @@ function CouponHistoryPage(data) {
 function App() {
   return (
     <div>
-      <h1>더미 데이터 표</h1>
-      {/* TableComponent를 호출하고 더미 데이터를 전달 */}
       <CouponHistoryPage data={dummyData} />
     </div>
   );

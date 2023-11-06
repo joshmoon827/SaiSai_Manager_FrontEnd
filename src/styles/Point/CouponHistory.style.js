@@ -4,7 +4,7 @@ export const Table = styled.table`
     font-family: 'pretendard', sans-serif; 
     text-align: center;
     border-collapse: separate;
-    border-spacing: 1rem; 
+    border-spacing: 3rem; 
     
     thead{
         font-size: small;
