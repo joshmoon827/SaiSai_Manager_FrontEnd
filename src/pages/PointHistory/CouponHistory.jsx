@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 const dummyData = [
   {
      id: 1,
-     number: "1",
      name: "문주호",
      username: "joshmoon",
      store: "starbucks",
@@ -60,7 +59,6 @@ function CouponHistoryPage(data) {
             {dummyData.map((item) => (
             <Tr key={item.id}>
               <Td>{item.id}</Td>
-              <Td>{item.number}</Td>
               <Td>{item.name}</Td>
               <Td>{item.username}</Td>
               <Td>{item.store}</Td>
@@ -95,7 +93,7 @@ function CouponHistoryPage(data) {
                 <Td>10</Td>
                 <Td>11/15 12:30:15</Td>
                 <Td>64000</Td>
-              </Tr>v
+              </Tr>
             </tbody>
           </Table>
 
