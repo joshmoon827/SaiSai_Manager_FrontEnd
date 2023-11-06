@@ -1,24 +1,35 @@
 import styled from "styled-components";
 
 export const Table = styled.table`
+    font-family: 'pretendard', sans-serif; 
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 1rem; 
     
+    thead{
+        font-size: small;
+        color:gray;
+        text-align:left;
+        font-weight:400;
+    }
+`
 
+export const Td = styled.td`
+    font-weight:bold;
 `
-export const Th = styled.th`
-    gap: 50px;
-`
+
 export const Tr = styled.tr`
-    width: 100%;
-    height: 100%;
-
 `
+
 export const Div = styled.div`
+
     width: 100px;
     height: 20px;
-    background-color: ${(props) => props.isSelected? "#FF6362" : "gray"};
+    background-color: ${(props) => props.isSelected ? "#FF6362" : "gray"};
 `
 
 export const Container = styled.div`
     display: flex;
     justify-content: center;
+    align-items: center;
 `
